@@ -1,0 +1,85 @@
+/* .btn-subscribe {
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+  }  THESE FOR THE IMG INSIDE THE SUBSCRIBE INPUTS*/
+
+
+/* 
+BLUE 1: #072AC8
+
+BLUE 2: #43D2FF
+
+BLUE 3: #A2D6F9
+
+BLUE 4: #D1EDFF
+
+GREY 1: #292E47
+
+GREY 2: #6B708D
+
+GREY 3: #F2F4FC
+
+GREY 4: #ECF7FF
+
+YELLOW: #FFC600 
+*/
+
+
+html, h1, body, section{
+    margin: 0;
+    background-color:#F2F4FC;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+/* STYLES FOR HEADER */
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3.5rem 5rem 0rem 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#header a{
+  margin-bottom: 0.5rem;
+}
+
+.navList{
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.navList li{
+  display: inline;
+  margin-right: 5rem;
+}
+
+li a{
+  text-decoration: none;
+  color: #6B708D;
+  font-weight: 500;
+}
+
+#homeNav{
+  color: #072AC8;
+}
+
+.btnBlue{
+  border: none;
+  background-color: #072AC8;
+  padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+}
+
+.btnBlue a{
+  color: #F2F4FC;
+  text-decoration: none;
+}
+
+                        

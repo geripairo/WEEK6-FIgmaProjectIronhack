@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Cloning figma design for Ironhack">
+    <meta name="author" content="Geri Pairó">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma: contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER NAVBAR SECTION -->
+
+<header id="header">
+        
+    <a href="index.html"><img id="homeLogo" class="logo" src="img/logos/circle.svg" alt="mainLogo"></a>
+    <nav class="navBar">
+        <ul class="navList">            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Services</a></li>
+        </ul>
+    </nav>
+    <button class="btn btn-contact"><a href="contact.html">Contact Us</a></button>
+</header>
+
+<!-- SECTION 1: Contact Us section  -->
+
+<form action="/comments" method="post" target="_self" id="formContainer">
+    <h1>Contact Us</h1>
+
+    <div>
+        <label for="name">Full Name *</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    </div>
+
+    <div>        
+        <label for="phone">Phone</label>
+        <br>
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div>
+        <label for="message"></label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="submit" value="Submit">
+
+    
+</form>
+
+<!-- SECTION 3: Footer Section  -->
+
+<footer id="footer">
+    <div id="addressBox">
+        <img id="footerLogo" src="img/logos/circle.svg" alt="mainLogo">
+        <address>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
+    </div>
+    <div id="footerLinks">
+        <a href="#" class="footerLinks">Team</a>
+        <a href="project.html" class="footerLinks">Services</a>
+        <a href="contact.html" class="footerLinks">About Us</a>
+        <a href="#" class="footerLinks">Press</a>
+        <a href="project.html" class="footerLinks">Projects</a>
+        <a href="#" class="footerLinks">Privacy Policy</a>
+    </div>
+</footer>
+
+</body>
+</html>
