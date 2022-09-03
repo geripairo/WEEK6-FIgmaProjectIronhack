@@ -25,7 +25,7 @@
                 <li><a class="nav-link" href="contact.html">Services</a></li>
             </ul>
 
-            <a href="contact.html"><button class="btnBlue btnContact">Contact Us</button></a>
+            <a href="contact.html"><button id="nav-button" class="btnBlue btnContact">Contact Us</button></a>
             <!-- <button class="btnBlue btnContact"><a href="contact.html">Contact Us</a></button> -->
         </nav>
         
@@ -37,9 +37,11 @@
     <section id="hero-section">
         <div id="homeClaimer">
             <h1>Empower Your Business With Stunning Design!</h1>
-            <p class="body-intro-20">Circle is a digital design and development studio. <br> We design and develop astonishing websites and mobile apps.</p>
-            <a href="contact.html"><button class="btnBlue btnContact">Get in touch</button></a>
-            <a href="project.html"><button class="btn btn-projects headline-text-med">See our work</button></a>
+            <p class="body-intro-20">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+            <div>
+                <a href="contact.html"><button class="btnBlue btnContact">Get in touch</button></a>
+                <a href="project.html"><button class="btn btn-projects headline-text-med">See our work</button></a>
+            </div>
         </div>
         <div id="home-img">
             <img src="img/hero-section/hero-image.png" alt="Boy Smiling with crossed arms" id="hero-img">
@@ -87,73 +89,82 @@
 
 <!-- SECTION 4: Testimonial section  -->
 
-    <section id="testimonialSection">
-        <h3>Hear What Our CLients Have to Say</h3>
-        <h4><q class="body-intro-24">"Circle helped us through every stage of our startup. <br> We really enjoyed working with you"</q></h4>
-        <div>
-            <img src="img/testimonial-section/profile.png" alt="Kristin Watson profile picture">
-            <p class="caption1" id="kristinText">Kristin Watson</p>
-            <p id="bookingText" class="caption2">Booking.com</p>
+    <section id="testimonial-section">
+        <div class="column-section">
+            <h3 id="testimonial-title">Hear What Our Clients Have to Say</h3>
+            <h4 class="testimonial-quote"><q class="body-intro-24 testimonial-quote">Circle helped us through every stage of our startup. <br> We really enjoyed working with you.</q></h4>
+            <div class="testimonial">
+                <img id="kristin-profile" src="img/testimonial-section/profile.png" alt="Kristin Watson profile picture">
+                <div id="testimonial-text">
+                    <p class="caption1 blue" id="kristinText">Kristin Watson</p>
+                    <p id="booking-text" class="caption2">Booking.com</p>
+                </div>
+            </div>
         </div>
-        <img class="testimonialEmoji emoji1" src="img/testimonial-section/memoji-1.png" alt="Girl with luck fingers emoji">
-        <img class="testimonialEmoji emoji2" src="img/testimonial-section/memoji-2.png" alt="Boy winking eye emoji ">
-        <img class="testimonialEmoji emoji3" src="img/testimonial-section/memoji-3.png" alt="Boy thumbs up with glasses emoji">
-        <img class="testimonialEmoji emoji4" src="img/testimonial-section/memoji-4.png" alt="Girl blowing a noisemaker with confetti emoji">
+        <img class="testimonial-emoji emoji1" src="img/testimonial-section/memoji-1.png" alt="Girl with luck fingers emoji">
+        <img class="testimonial-emoji emoji2" src="img/testimonial-section/memoji-2.png" alt="Boy winking eye emoji ">
+        <img class="testimonial-emoji emoji3" src="img/testimonial-section/memoji-3.png" alt="Boy thumbs up with glasses emoji">
+        <img class="testimonial-emoji emoji4" src="img/testimonial-section/memoji-4.png" alt="Girl blowing a noisemaker with confetti emoji">
     </section>
 
 <!-- SECTION 5: Services section  -->
 
-    <section id="servicesSection">
+    <!-- <section id="services-section">
         <h3>Our Services</h3>
-        <div class="articleRow">
-            <aritcle class="servicesArticle">
-                <img src="img/services-section/icons/1.svg" alt="pencil icon">
+        <div class="article-row">
+            <aritcle class="services-article">
+                <div class="img-circle"><img src="img/services-section/icons/1.svg" alt="pencil icon"></div>
                 <h4>User Interface Design</h4>
-                <p class="body-intro-20">Circle provides you with a stunning user interface design that is accessible to everyone</p>
-                <button class="btn btn-learnMore"><a href="contact.html">Learn More</a></button>
+                <p class="body-intro-20 services">Circle provides you with a stunning user interface design that is accessible to everyone</p>
+                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
             </aritcle>
-            <aritcle class="servicesArticle">
-                <img src="img/services-section/icons/2.svg" alt="pencil icon">
+            <aritcle class="services-article">
+                <div class="img-circle"><img src="img/services-section/icons/2.svg" alt="pencil icon"></div>
                 <h4>User Experience Design</h4>
-                <p class="body-intro-20">Circle provides you with a stunning user interface design that is accessible to everyone</p>
-                <button class="btn btn-learnMore"><a href="contact.html">Learn More</a></button>
+                <p class="body-intro-20 services">Circle always focuses on delivering the best user experience to your customers.</p>
+                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
             </aritcle>
-            <aritcle class="servicesArticle">
-                <img src="img/services-section/icons/3.svg" alt="pencil icon">
+            <aritcle class="services-article">
+                <div class="img-circle"><img src="img/services-section/icons/3.svg" alt="pencil icon"></div>
                 <h4>Application Development</h4>
-                <p class="body-intro-20">Circle provides you with a stunning user interface design that is accessible to everyone</p>
-                <button class="btn btn-learnMore"><a href="contact.html">Learn More</a></button>
+                <p class="body-intro-20 services">We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
             </aritcle>
         </div>
-    </section>
+    </section> -->
 
 <!-- SECTION 6: CTA Newsletter section  -->
 
-    <section id="newsletter">
+    <!-- <section id="newsletter">
         <h3>Do you have any questions?</h3>
         <p class="body-intro-20">Let us Help you</p>
-        <div id="subscribe">
-            <input type="email" class="newsletterEmail" value placeholder="Enter your email">
-            <button class="btnBlue btnSubscribe body-intro-20"><a href="#">Subscribe</a></button> <!--REMEMBER TO SET THE LINK ROUTE OF THE BUTTON AND THESE CSS -->
-        </div>
-    </section>
+        <div id="subscribe"> -->
+            <!-- <i><img src="img/newsletter/icon/mail.svg" alt="email icon"></i> -->
+            <!-- <input type="email" class="newsletter-email" value placeholder="Enter your email">
+            <a href="#"><button class="btn-subscribe">Subscribe</button></a> <!--REMEMBER TO SET THE LINK ROUTE OF THE BUTTON AND THESE CSS -->
+        <!-- </div>
+    </section> --> 
 
 <!-- SECTION 7: Footer Section  -->
 
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div id="addressBox">
-            <img id="footerLogo" src="img/logos/circle.svg" alt="mainLogo">
-            <address class="caption1">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
+            <img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo">
+            <address id="address" class="caption-1">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
         </div>
-        <div id="footerLinks">
-            <a href="#" class="footerLinks caption1">Team</a>
-            <a href="project.html" class="footerLinks caption1">Services</a>
-            <a href="contact.html" class="footerLinks caption1">About Us</a>
-            <a href="#" class="footerLinks caption1">Press</a>
-            <a href="project.html" class="footerLinks caption1">Projects</a>
-            <a href="#" class="footerLinks caption1">Privacy Policy</a>
+        <div id="footer-links-container">
+            <div class="links-container">
+                <a href="#" class="footer-links caption1">Team</a>
+                <a href="project.html" class="footer-links caption1">Services</a>
+                <a href="contact.html" class="footer-links caption1">About Us</a>
+            </div>
+            <div class="links-container">
+                <a href="#" class="footer-links caption1">Press</a>
+                <a href="project.html" class="footer-links caption1">Projects</a>
+                <a href="#" class="footer-links caption1">Privacy Policy</a>
+            </div>            
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
