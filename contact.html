@@ -11,70 +11,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <!-- HEADER NAVBAR SECTION -->
 
-<header id="header">
+<header>
         
-    <a href="index.html"><img id="homeLogo" class="logo" src="img/logos/circle.svg" alt="mainLogo"></a>
-    <nav class="navBar">
-        <ul class="navList">            
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Services</a></li>
+    <nav class="nav-bar">
+        <a href="index.html"><img id="home-logo" class="logo" src="img/logos/circle.svg" alt="mainLogo"></a>
+
+        <ul class="nav-list">            
+            <li><a id="homeNav" class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="project.html">Projects</a></li>
+            <li><a class="nav-link" href="contact.html">Services</a></li>
         </ul>
+
+        <a href="contact.html"><button id="nav-button" class="btnBlue btnContact">Contact Us</button></a>
     </nav>
-    <button class="btn btn-contact"><a href="contact.html">Contact Us</a></button>
+    
 </header>
 
 <!-- SECTION 1: Contact Us section  -->
-
-<form action="/comments" method="post" target="_self" id="formContainer">
+<section id="form-section">
     <h1>Contact Us</h1>
 
-    <div>
-        <label for="name">Full Name *</label>
-        <br>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-    </div>
+    <form action="/comments" method="post" target="_self" id="form-container">
 
-    <div>
-        <label for="email">Email</label>
-        <br>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-    </div>
+        <div>
+            <label class="form-label" for="name">Full Name *</label>
+            <br>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
 
-    <div>        
-        <label for="phone">Phone</label>
-        <br>
-        <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
-    </div>
+        <div id="input-half-container">
+            <div>
+                <label class="form-label" for="email">Email</label>
+                <br>
+                <input class="form-input-half" type="email" id="email" name="email" placeholder="Enter your email address" required>     
+    
+            </div> 
+            <div>
+                <label class="form-label" for="phone">Phone</label>
+                <br>
+                <input class="form-input-half" type="number" id="phone" name="phone" placeholder="Enter your phone number" required>    
+            </div>        
+        </div>
 
-    <div>
-        <label for="message"></label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-    </div>
+        <div>
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+        </div>
 
-    <input type="submit" value="Submit">
+        <input class="btn-subscribe" type="submit" value="Submit">
 
     
-</form>
+    </form>
+</section>
 
-<!-- SECTION 3: Footer Section  -->
+<!-- SECTION 2: Footer Section  -->
 
 <footer id="footer">
     <div id="addressBox">
-        <img id="footerLogo" src="img/logos/circle.svg" alt="mainLogo">
-        <address>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
+        <img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo">
+        <address id="address" class="caption-1">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
     </div>
-    <div id="footerLinks">
-        <a href="#" class="footerLinks">Team</a>
-        <a href="project.html" class="footerLinks">Services</a>
-        <a href="contact.html" class="footerLinks">About Us</a>
-        <a href="#" class="footerLinks">Press</a>
-        <a href="project.html" class="footerLinks">Projects</a>
-        <a href="#" class="footerLinks">Privacy Policy</a>
+    <div id="footer-links-container">
+        <div class="links-container">
+            <a href="#" class="footer-links caption1">Team</a>
+            <a href="project.html" class="footer-links caption1">Services</a>
+            <a href="contact.html" class="footer-links caption1">About Us</a>
+        </div>
+        <div class="links-container">
+            <a href="#" class="footer-links caption1">Press</a>
+            <a href="project.html" class="footer-links caption1">Projects</a>
+            <a href="#" class="footer-links caption1">Privacy Policy</a>
+        </div>            
     </div>
 </footer>
+
+
 
 </body>
 </html>

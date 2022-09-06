@@ -1,0 +1,479 @@
+/* 
+BLUE 1: #072AC8
+
+BLUE 2: #43D2FF
+
+BLUE 3: #A2D6F9
+
+BLUE 4: #D1EDFF
+
+GREY 1: #292E47
+
+GREY 2: #6B708D
+
+GREY 3: #F2F4FC
+
+GREY 4: #ECF7FF
+
+YELLOW: #FFC600 
+*/
+
+*{
+    margin: 0;
+  }
+  html, body, section, article{
+      margin: 0;
+      background-color:#F2F4FC;
+  }
+  
+  /* FONTS STYLING */
+  
+  html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #292E47;
+  }
+  
+  h2{
+    font-size: 3.125rem;
+    font-weight: 700;
+  }
+  
+  h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #292E47;
+  }
+  
+  h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #292E47;
+  }
+  
+  .body-intro-24{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .body-intro-20{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#6B708D;
+  }
+  
+  .headline-text-reg{
+    font-size: 1.063rem;
+    font-weight: 400;
+    color:#6B708D;
+  }
+  
+  .headline-text-med{
+    font-size: 1.063rem;
+    font-weight: 700;
+    color:#292E47;
+  }
+  
+  .caption1{
+    font-size: 0.938rem;
+    font-weight: 400;
+  }
+  
+  .caption2{
+    font-size: 0.813rem;
+    font-weight: 400;
+  }
+  
+  
+  /* STYLES FOR HEADER DESKTOP */
+  
+  header{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 7rem;
+  }
+  
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3.5rem;
+    min-height: 3rem;
+  }
+  
+  #home-logo{
+    margin-bottom: 0.5rem;
+    width: 4.5rem;
+  }
+  
+  .nav-list{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;  
+  }
+  
+  .nav-list li{
+  list-style: none;
+  
+  }
+  
+  li a{
+    text-decoration: none;
+    color: #6B708D;
+    font-weight: 500;
+    font-size: 1.063rem;
+  }
+  
+  #homeNav{
+    color: #072AC8;
+  }
+  
+  .btnBlue{
+    border: none;
+    background-color: #072AC8;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.063rem;
+    color: #F2F4FC;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* STYLES FOR HEADER MOBILE */                 
+  
+  @media (max-width: 767px ) {
+  
+    #nav-button{
+      display: none;
+    }
+  
+    .nav-list{
+      gap: 1.5rem;   
+    }
+  
+  }
+  
+  @media (max-width: 480px ){
+    #home-logo{
+      width: 3rem;
+    }
+  }
+
+
+  /* SECTION 1: PROJECT SECTION */
+
+   #landing-section{
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+   }
+
+   #landing-subtitle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.7rem;
+   }
+
+   #landing-subtitle h4{
+    color: #6B708D;
+    font-weight: 400;
+   }
+
+   #projects-img{
+    width: 100%;
+    height: 444px;
+    background-image: url(../img/projects-section/1.jpg);
+    background-size: cover;
+    background-position: center;  
+    margin-top: 3rem;
+   }  
+
+   #project-date{
+    color: #6B708D;
+   }
+
+   #date-style{
+    color: #292E47;
+    font-weight: 500;
+   }
+
+
+   #projects-text{
+    margin-top: 4rem;
+   }
+
+  .paragraph{
+    line-height: 23px;
+    color: #6B708D;
+   }
+
+   #bottom{
+    margin-top: 1.5rem;
+   }
+
+  /* RESPONSIVE SECTION 1 */
+
+  @media(max-width: 680px){
+    #landing-subtitle{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      height: 8vh;
+    }
+
+    #projects-img{ 
+      margin-top: 2rem;
+     }
+     
+     #projects-text{
+      margin-top: 2rem;
+     }
+  }
+
+  /* STYLES SECTION 2 */
+
+#projects-section{
+  width: 85%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.article-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.projects-article{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
+  margin-top: 4rem;
+  box-sizing: border-box;
+
+}
+
+.projects-article h4{ 
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.projects-article p{ 
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.projects-article a{ 
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.projects-article img{
+  width: 340px;
+  height: 240px;
+}
+
+.btn-learn-more{
+  border: none;
+  text-decoration: none;
+  color: #072AC8;
+  cursor: pointer;
+  background-color: white;
+  padding: 0;
+}
+
+/* RESPONSIVE SECTION 2 */
+
+@media(max-width: 1270px){
+  .projects-article img{
+    width: 270px;
+    height: 170px;
+  } 
+
+}
+
+@media(max-width: 1023px){
+  .article-row{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .projects-article{
+    width: 100%;
+    margin-bottom: 1rem;    
+  }
+
+  .projects-article img{
+    width: 100%;
+    height: 50%;
+  }
+}
+
+/* STYLES SECTION 3 */
+
+#newsletter{
+  background-color: #FFC600;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  padding: 10rem 2rem;
+  box-sizing: border-box;
+}
+
+.btn-subscribe{
+  border: none;
+  background-color: #072AC8;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.063rem;
+  color: #F2F4FC;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.newsletter-email{
+    padding: 1.5rem 3rem;
+    background: url("../img/newsletter/icon/mail.svg") no-repeat 6% 50%;
+    background-size: 20px;
+    background-color: white;
+    border: none;
+    font-size: 1.063rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  } 
+
+  #subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  #subscribe a{
+    width: 60%;
+  }
+
+  #newsletter p{
+    margin-top: 1rem;
+    color: #292E47;
+  }
+  
+
+  /* RESPONSIVE SECTION 3 */
+
+  @media(max-width: 1023px){
+    #newsletter{
+      text-align: center;
+      margin-top: 6rem;
+    }
+  }
+
+  @media(max-width: 650px){
+
+    #newsletter{
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+    #subscribe{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .newsletter-email{
+      width: 100%;
+      text-align: center;
+    }
+
+    #subscribe a{
+      width: 100%;
+    }
+  }
+
+  /* STYLES FOOTER */
+
+  #footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    margin-top: 5rem;
+    box-sizing: border-box;
+  }
+
+  #footer-logo{
+    width: 100px;
+  }
+  
+  #address{
+    color: #6B708D;
+    line-height: 25px;
+    margin-top: 1rem;
+  }
+
+  .footer-links{
+    text-decoration: none;
+    color:#6B708D;
+  }
+
+  #footer-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+  }
+
+  .links-container{
+    display: flex;
+    gap: 5rem;
+  }
+
+  /* RESPONSIVE FOOTER */
+
+  @media(max-width: 780px){
+    #footer{
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 10rem;
+    }
+    
+    #addressBox{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .links-container{
+      justify-content: space-between;
+    }
+    #footer-links-container{
+      width: 100%;
+    }
+  }

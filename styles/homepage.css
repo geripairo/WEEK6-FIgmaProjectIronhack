@@ -118,7 +118,7 @@ header{
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
   display: flex;
-  width: 30%;
+  width: 40%;
   justify-content: space-evenly;  
 }
 
@@ -150,7 +150,7 @@ li a{
 
 /* STYLES FOR HEADER MOBILE */                 
 
-@media (max-width: 767px ) {
+@media (max-width: 800px ) {
 
   #nav-button{
     display: none;
@@ -189,17 +189,17 @@ li a{
 }
 
 .c1{
-  width: 60%;
+  width: 70%;
   position: absolute;
-  top: -20px;
-  left: -75px;
+  top: -7%;
+  left: -20%;
 }
 
 .c2{
-  width: 50%;
+  width: 55%;
   position: absolute;
-  bottom: -90px;
-  right: -65px;
+  bottom: -18%;
+  right: -12%;
 }
 
 #homeClaimer h1{
@@ -304,6 +304,10 @@ li a{
     #logo-slider{
       display: none;
     }
+
+    #hero-section{
+      margin-bottom: 7rem;
+    }
       
     
 }
@@ -313,6 +317,7 @@ li a{
 #projects-section{
   width: 85%;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .article-row{
@@ -320,6 +325,7 @@ li a{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .projects-article{
@@ -328,6 +334,8 @@ li a{
   flex-direction: column;
   box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
   margin-top: 4rem;
+  box-sizing: border-box;
+
 }
 
 .projects-article h4{ 
@@ -362,6 +370,14 @@ li a{
 
 /* RESPONSIVE SECTION 3 */
 
+@media(max-width: 1270px){
+  .projects-article img{
+    width: 270px;
+    height: 170px;
+  } 
+
+}
+
 @media(max-width: 1023px){
   .article-row{
     flex-direction: column;
@@ -370,16 +386,16 @@ li a{
 
   .projects-article{
     width: 100%;
-    margin-bottom: rem;    
+    margin-bottom: 1rem;    
   }
 
   .projects-article img{
     width: 100%;
     height: 50%;
   }
-
-
 }
+
+
 
 
 /* STYLES SECTION 4 */
@@ -391,9 +407,9 @@ li a{
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
-  margin-top: 15rem;
+  margin-top: 13rem;
   margin-bottom: 10rem;
-  height: 70vh;
+  height: 60vh;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -414,7 +430,7 @@ li a{
   justify-content: center;
 }
 .testimonial-emoji{
-  width: 150px;
+  width: 100px;
 }
 
 #kristin-profile{
@@ -452,27 +468,70 @@ li a{
 
 .emoji1{
   position: absolute;
-  top: 20px;
-  left: 120px;
+  top: 10%;
+  left: 6%;
 }
 
 .emoji2{
   position: absolute;
-  top: 20px;
-  right: 120px;
+  top: 10%;
+  right: 6%;
 }
 
 .emoji3{
   position: absolute;
-  bottom: 70px;
-  left: 100px;
+  bottom: 15%;
+  left: 6%;
 }
 
 .emoji4{
   position: absolute;
-  bottom: 70px;
-  right: 100px;
+  bottom: 15%;
+  right: 6%;
 }
+
+/* RESPONSIVE SECTION 4 */
+
+@media(max-width: 1270px){
+  #testimonial-section{
+    margin-top: 6rem;
+  }
+
+}
+
+@media(max-width: 1023px){
+  .testimonial-emoji{
+    display: none;
+  }
+
+  #testimonial-title{
+    text-align: center;
+    margin: 3rem auto;
+    width: 80%;
+    margin-top: 6rem;
+  }
+
+  .testimonial-quote{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  #testimonial-section{
+    margin-top: 4rem;
+  }
+}
+
+@media(max-width: 490px){
+  #testimonial-title{
+    font-size: 2rem;
+  }
+
+  .testimonial-quote{
+    font-size: 1rem;
+  }
+}
+
 
 
 /* STYLES SECTION 5 */
@@ -493,17 +552,29 @@ li a{
   background-color: white;
   height: 50vh;
   box-shadow: 2px 49px 79px 0px rgba(41,46,71,0.20);
-  width: 20%;
-  padding-left: 2rem;
-  padding-right: 3rem;
+  width: 30%;
+  /* padding-left: 2rem;
+  padding-right: 3rem; */
 }
 
 .services-article a{
   margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 
 .services-article img{
   width: 40px;
+}
+
+.services-article h4{
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+.services-article p{
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 
 .img-circle{
@@ -515,6 +586,30 @@ li a{
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+/* RESPONSIVE SECTION 5 */
+
+@media(max-width: 1023px){
+
+  .services-article{
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+    align-items: center;
+    height: 60vh;    
+  }
+}
+
+@media(max-width: 550px){
+
+  .services-article{
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: left;
+    align-items: flex-start;    
+  }
 }
 
 /* STYLES SECTION 6 */
@@ -528,7 +623,8 @@ li a{
   justify-content: center;
   align-items: center;
   margin-top: 12rem;
-  padding: 10rem 0rem;
+  padding: 10rem 2rem;
+  box-sizing: border-box;
 }
 
 .btn-subscribe{
@@ -540,18 +636,20 @@ li a{
   cursor: pointer;
   text-decoration: none;
   font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .newsletter-email{
     padding: 1.5rem 3rem;
-    width: 300px;
-    background: url("../img/newsletter/icon/mail.svg") no-repeat left;
+    background: url("../img/newsletter/icon/mail.svg") no-repeat 6% 50%;
     background-size: 20px;
     background-color: white;
     border: none;
     font-size: 1.063rem;
     display: flex;
     align-items: center;
+    box-sizing: border-box;
   } 
 
   #subscribe{
@@ -562,9 +660,45 @@ li a{
     margin-top: 3rem;
   }
 
+  #subscribe a{
+    width: 60%;
+  }
+
   #newsletter p{
     margin-top: 1rem;
     color: #292E47;
+  }
+  
+
+  /* RESPONSIVE SECTION 6 */
+
+  @media(max-width: 1023px){
+    #newsletter{
+      text-align: center;
+      margin-top: 6rem;
+    }
+  }
+
+  @media(max-width: 650px){
+
+    #newsletter{
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+    #subscribe{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .newsletter-email{
+      width: 100%;
+      text-align: center;
+    }
+
+    #subscribe a{
+      width: 100%;
+    }
   }
 
   /* STYLES FOOTER */
@@ -575,8 +709,9 @@ li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
-    margin-top: 8rem;
+    height: 40vh;
+    margin-top: 5rem;
+    box-sizing: border-box;
   }
 
   #footer-logo{
@@ -592,19 +727,41 @@ li a{
   .footer-links{
     text-decoration: none;
     color:#6B708D;
-    display: block;
   }
 
   #footer-links-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 5rem;
+    height: 30%;
   }
 
   .links-container{
     display: flex;
-    gap: 8rem;
+    gap: 5rem;
+  }
+
+  /* RESPONSIVE FOOTER */
+
+  @media(max-width: 780px){
+    #footer{
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 10rem;
+    }
+    
+    #addressBox{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .links-container{
+      justify-content: space-between;
+    }
+    #footer-links-container{
+      width: 100%;
+    }
   }
 
 
@@ -636,6 +793,3 @@ li a{
 
 
 
-.projectsArticle img{
-  width:500px;
-}
