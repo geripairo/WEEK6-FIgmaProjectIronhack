@@ -34,37 +34,66 @@
 <section id="form-section">
     <h1>Contact Us</h1>
 
-    <form action="/comments" method="post" target="_self" id="form-container">
+    <form action="" class="form" id="form" method="get">
 
-        <div>
-            <label class="form-label" for="name">Full Name *</label>
-            <br>
-            <input class="form-input" type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <!-- Name Group -->
+        <div class="form-container" id="name-container">
+            <label for="name" class="form-label">Full Name *</label>
+            <div class="input-group">
+                <input type="text" name="name" id="name-input" class="form-input" placeholder="Enter your full name (ex: John Doe)">
+                <i class="form-state-validation fa-sharp fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">The name must be between 3 and 20 characters and can only cointain letters.</p>
         </div>
 
-        <div id="input-half-container">
-            <div>
-                <label class="form-label" for="email">Email</label>
-                <br>
-                <input class="form-input-half" type="email" id="email" name="email" placeholder="Enter your email address" required>     
-    
-            </div> 
-            <div>
-                <label class="form-label" for="phone">Phone</label>
-                <br>
-                <input class="form-input-half" type="number" id="phone" name="phone" placeholder="Enter your phone number" maxlength="14" required>    
-            </div>        
-        </div>
+        <div id="responsive-form-group">
+            <!-- Email Group -->
+            <div class="form-container" id="email-container">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-group">
+                    <input type="email" name="email" id="email-input" class="form-input" placeholder="Enter your email address">
+                    <i class="form-state-validation fa-sharp fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">Needs to be a valid email direction.</p>
+            </div>
 
-        <div>
+            <!-- Phone Group -->
+            <div class="form-container" id="phone-container">
+                <label for="phone" class="form-label">Phone</label>
+                <div class="input-group">
+                    <input type="number" name="phone" id="phone-input" class="form-input" placeholder="Enter your phone number">
+                    <i class="form-state-validation fa-sharp fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">Phone can only contain numbers and must start with your country prefix.</p>
+            </div>
+        </div>
+        
+
+        <!-- Message Group -->
+        <div class="form-container" id="message-container">
             <label class="form-label" for="message">Message</label>
-            <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Write your message here..." maxlength="50"></textarea>
+            <div class="message-input-group">
+                <textarea class="form-input" name="message" id="message"  placeholder="Write your message here..." maxlength="200"></textarea>
+            </div>
         </div>
 
-        <input class="btn-subscribe" type="submit" value="Submit">
+        
+        <!-- Form Button -->
+        <div class="form-container btn-send" id="group-terms">
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <p class="success-message" id="success-message">The form submitted successfully!</p>
+        </div>
 
-    
+        <div class="form-message">
+            <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Please complete the form correctly.</b></p>
+        </div>
+
+
+        
+
     </form>
+
+
 </section>
 
 <!-- SECTION 2: Footer Section  -->
@@ -88,7 +117,41 @@
     </div>
 </footer>
 
-
+<script src="js/form.js"></script>
+<script src="https://kit.fontawesome.com/18ff6d286a.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
+    <!-- <form action="" method="post" target="_self" id="form-container" name="form">
+
+        <div>
+            <label class="form-label" for="name">Full Name *</label>
+            <br>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Enter your full name">
+        </div>
+
+        <div id="input-half-container">
+            <div>
+                <label class="form-label" for="email">Email</label>
+                <br>
+                <input class="form-input-half" type="email" id="email" name="email" placeholder="Enter your email address">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>     
+    
+            </div> 
+            <div>
+                <label class="form-label" for="phone">Phone</label>
+                <br>
+                <input class="form-input-half" type="number" id="phone" name="phone" placeholder="Enter your phone number" maxlength="14">    
+            </div>        
+        </div>
+
+        <div>
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input" name="message" id="message" cols="30" rows="10" placeholder="Write your message here..." maxlength="50"></textarea>
+        </div>
+
+        <input id="submit-btn" class="btn-subscribe" type="submit" value="Submit">
+
+    
+    </form> -->

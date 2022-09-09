@@ -170,7 +170,207 @@ YELLOW: #FFC600
 
 
   /* STYLES FORM */
-  #form-section{
+
+#form-section{
+  width: 85%;
+  margin: auto;
+}
+
+#form-section h1{
+  margin-bottom: 2rem;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+#responsive-form-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-label{
+  color: #6B708D;
+  font-family: 'Roboto';
+  font-weight: 400;
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+.input-group{
+  position: relative;
+}
+
+.form-input{
+  width: 100%;
+  background-color:rgba(107, 112, 141, 0.07);
+  border: none;
+  height: 60px;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  transition: 0.05s ease-in-out all;
+  border-radius: 3px;
+}
+
+.form-input:focus{
+  border: 2px solid #072AC8;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.3);  
+}
+
+#message{
+  height: 20vh;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  font-family: 'Roboto';
+}
+
+.form-input-error{
+  font-size: 0.8rem;
+  display: none;
+}
+
+.form-input-error-active{
+  display: block;
+}
+
+.form-state-validation{
+  position: absolute;
+  right: 20px;
+  bottom: 22px;
+  z-index: 100;
+  font-size: 1rem;
+  /* opacity: 0; */
+}
+
+.form-message{
+  height: 40px;
+  line-height: 40px;
+  background-color: #F66060;
+  border-radius: 3px;
+  padding-left: 1rem;
+  display: none;
+}
+
+.form-message-active{
+  display: block;
+}
+
+.btn-submit{
+  border: none;
+  background-color: #072AC8;
+  padding: 1.7rem 2rem;
+  font-size: 1.063rem;
+  color: #F2F4FC;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 100%;
+  font-weight: 500;
+  transition: 0.1s ease-in-out all;
+  border-radius: 3px;
+}
+
+.btn-submit:hover{
+  background-color: #A2D6F9;
+  color: #292E47;
+  font-weight: 700;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.6); 
+}
+
+#success-message{
+  font-size: 12px;
+  background-color: rgba(17, 146, 0, 0.6);
+  margin-top: 1rem;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color:#292E47;
+  border-radius: 5px;
+  font-weight: 600;
+  display: none;
+}
+
+#success-message-active{
+  display: block;
+}
+
+
+
+
+
+
+
+
+  /* STYLES FOOTER */
+
+  #footer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    margin-top: 5rem;
+    box-sizing: border-box;
+  }
+
+  #footer-logo{
+    width: 100px;
+  }
+  
+  #address{
+    color: #6B708D;
+    line-height: 25px;
+    margin-top: 1rem;
+  }
+
+  .footer-links{
+    text-decoration: none;
+    color:#6B708D;
+  }
+
+  #footer-links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+  }
+
+  .links-container{
+    display: flex;
+    gap: 5rem;
+  }
+
+  /* RESPONSIVE FOOTER */
+
+  @media(max-width: 780px){
+    #footer{
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 10rem;
+    }
+    
+    #addressBox{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .links-container{
+      justify-content: space-between;
+    }
+    #footer-links-container{
+      width: 100%;
+    }
+  }
+
+
+    /* #form-section{
     width: 85%;
     margin: auto;
   }
@@ -239,72 +439,9 @@ YELLOW: #FFC600
     width: 100%;
   }
 
-  /* RESPONSIVE FORM */
+
   @media(max-width: 780px){
     #input-half-container{
       flex-direction: column;
     }
-  }
-
-  /* STYLES FOOTER */
-
-  #footer{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40vh;
-    margin-top: 5rem;
-    box-sizing: border-box;
-  }
-
-  #footer-logo{
-    width: 100px;
-  }
-  
-  #address{
-    color: #6B708D;
-    line-height: 25px;
-    margin-top: 1rem;
-  }
-
-  .footer-links{
-    text-decoration: none;
-    color:#6B708D;
-  }
-
-  #footer-links-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30%;
-  }
-
-  .links-container{
-    display: flex;
-    gap: 5rem;
-  }
-
-  /* RESPONSIVE FOOTER */
-
-  @media(max-width: 780px){
-    #footer{
-      flex-direction: column;
-      justify-content: space-around;
-      margin-top: 10rem;
-    }
-    
-    #addressBox{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-    .links-container{
-      justify-content: space-between;
-    }
-    #footer-links-container{
-      width: 100%;
-    }
-  }
+  } */
