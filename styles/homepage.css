@@ -110,6 +110,11 @@ header{
 #home-logo{
   margin-bottom: 0.5rem;
   width: 4.5rem;
+  transition: 0.1s ease-in-out all;
+}
+
+#home-logo:hover{
+  transform: translateY(-0.1rem);
 }
 
 .nav-list{
@@ -119,7 +124,8 @@ header{
   margin-left: 1.5rem;
   display: flex;
   width: 40%;
-  justify-content: space-evenly;  
+  justify-content: space-evenly; 
+  box-sizing: border-box; 
 }
 
 .nav-list li{
@@ -132,10 +138,22 @@ li a{
   color: #6B708D;
   font-weight: 500;
   font-size: 1.063rem;
+  transition: 0.15s ease-in-out;
+
+}
+
+li a:hover{
+  color: #072AC8;
 }
 
 #homeNav{
   color: #072AC8;
+  transition: 0.1s ease-in-out;
+}
+
+#homeNav:hover{
+  color: #FFC600;
+  font-weight: 800;
 }
 
 .btnBlue{
@@ -146,6 +164,15 @@ li a{
   color: #F2F4FC;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+.btnBlue:hover{
+  background-color: rgba(67, 210, 255, 0.6);
+  color: #292E47;
+  font-weight: 500;
+  transform: translateY(-0.1rem);
+  box-shadow: 3px 0px 30px rgba(67, 210, 255, 0.2); 
 }
 
 .hamburger{
@@ -166,12 +193,12 @@ li a{
 
 @media (max-width: 800px ) {
 
-  #nav-button{
+  #nav-button-a{
     display: none;
   }
 
   .nav-list{
-    gap: 1.5rem;   
+    width: 100%;   
   }
 }
 
@@ -236,17 +263,17 @@ li a{
 }
 
 .c1{
-  width: 70%;
+  width: 60%;
   position: absolute;
-  top: -7%;
-  left: -20%;
+  top: -4%;
+  left: -12%;
 }
 
 .c2{
-  width: 55%;
+  width: 50%;
   position: absolute;
-  bottom: -18%;
-  right: -12%;
+  bottom: -15%;
+  right: -5%;
 }
 
 #homeClaimer h1{
@@ -262,10 +289,16 @@ li a{
   text-decoration: none;
   color: #6B708D;
   cursor: pointer;
-  padding: 0.8rem 1.8rem;
+  margin-left: 1rem;
   background-color: #F2F4FC;
+  transition: 0.2s ease-in-out all;
+  font-weight: 500;
 }
 
+.btn-projects:hover{
+  color: #292E47;
+  font-weight: 600;
+}
 
 /* SECTION 1 RESPONSIVE */
 
@@ -687,6 +720,12 @@ li a{
   width: 100%;
 }
 
+.btn-subscribe:hover{
+  background-color: rgba(67, 210, 255, 1);
+  color: #292E47;
+  font-weight: 500;
+}
+
 .newsletter-email{
     padding: 1.5rem 3rem;
     background: url("../img/newsletter/icon/mail.svg") no-repeat 6% 50%;
@@ -774,6 +813,12 @@ li a{
   .footer-links{
     text-decoration: none;
     color:#6B708D;
+    transition: 0.1s ease-in-out all;
+  }
+
+  .footer-links:hover{
+    color: #292E47;
+    font-weight: 400;
   }
 
   #footer-links-container{

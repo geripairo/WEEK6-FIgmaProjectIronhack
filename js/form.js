@@ -55,13 +55,11 @@ const validateField = (expression, input, field) => {
 }
 
 
-
 // COMPROBACIÓN INPUTS (Al escribir o levantar la tecla)
 inputs.forEach((input) => {
-    input.addEventListener('keyup', validateForm);
-    // input.addEventListener('blur', removeRedInput);
+    input.addEventListener('keyup', validateForm,)
+    });
 
-})
 
 // EVENT VALIDATION (valida el formulario y evita que se envie)
 form.addEventListener("submit", (event) => {
