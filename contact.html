@@ -43,7 +43,7 @@
                 <input type="text" name="name" id="name-input" class="form-input" placeholder="Enter your full name (ex: John Doe)">
                 <i class="form-state-validation fa-sharp fa-solid fa-circle-xmark"></i>
             </div>
-            <p class="form-input-error">The name must be between 3 and 20 characters and can only cointain letters.</p>
+            <p class="form-input-error">The name must be between 3 and 40 characters and can only cointain letters and spaces.</p>
         </div>
 
         <div id="responsive-form-group">
@@ -64,7 +64,7 @@
                     <input type="number" name="phone" id="phone-input" class="form-input" placeholder="Enter your phone number">
                     <i class="form-state-validation fa-sharp fa-solid fa-circle-xmark"></i>
                 </div>
-                <p class="form-input-error">Phone can only contain numbers and must start with your country prefix.</p>
+                <p class="form-input-error">Phone can only contain numbers and must start with your country prefix (ex: +34666666666).</p>
             </div>
         </div>
         
@@ -80,12 +80,12 @@
         
         <!-- Form Button -->
         <div class="form-container btn-send" id="group-terms">
-            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="submit" class="btn btn-submit" id="">Submit</button>
             <p class="success-message" id="success-message">The form submitted successfully!</p>
         </div>
 
-        <div class="form-message">
-            <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Please complete the form correctly.</b></p>
+        <div class="form-message" id="form-message">
+            <p><i class="fa-solid fa-triangle-exclamation"></i><b>The fields can't be empty. Please, complete the form correctly.</b></p>
         </div>
 
 

@@ -217,9 +217,9 @@ YELLOW: #FFC600
 }
 
 .form-input:focus{
-  border: 2px solid #072AC8;
+  border: 2.5px solid #072AC8;
   outline: none;
-  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.3);  
+  box-shadow: 3px 0px 30px rgba(7, 42, 200, 0.15);  
 }
 
 #message{
@@ -232,6 +232,8 @@ YELLOW: #FFC600
 .form-input-error{
   font-size: 0.8rem;
   display: none;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 .form-input-error-active{
@@ -244,7 +246,7 @@ YELLOW: #FFC600
   bottom: 22px;
   z-index: 100;
   font-size: 1rem;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .form-message{
@@ -276,13 +278,14 @@ YELLOW: #FFC600
 }
 
 .btn-submit:hover{
-  background-color: #A2D6F9;
+  background-color: rgba(67, 210, 255, 0.6);
   color: #292E47;
   font-weight: 700;
-  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.6); 
+  transform: translateY(-0.2rem);
+  box-shadow: 3px 0px 30px rgba(67, 210, 255, 0.5); 
 }
 
-#success-message{
+.success-message{
   font-size: 12px;
   background-color: rgba(17, 146, 0, 0.6);
   margin-top: 1rem;
@@ -295,8 +298,34 @@ YELLOW: #FFC600
   display: none;
 }
 
-#success-message-active{
+.success-message-active{
   display: block;
+}
+
+.form-container-correct .form-state-validation{
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.form-container-incorrect .form-label{
+  color:#bb2929;
+}
+
+.form-container-incorrect .form-state-validation{
+  color:#bb2929;
+  opacity: 1;
+}
+
+.form-container-incorrect .form-input{
+  border: 2px solid #bb2929;
+}
+
+/* STYLES RESPONSIVE FORM */
+
+@media(max-width: 767px){
+  #responsive-form-group{
+    grid-template-columns: 1fr;
+  }
 }
 
 
