@@ -401,6 +401,14 @@ li a:hover{
   }
 }
 
+@media(max-width: 575px){
+  .form-message{
+    text-align: center;
+    height: 80px;
+    line-height: 40px;
+  }
+}
+
   /* STYLES FOOTER */
 
   #footer{
