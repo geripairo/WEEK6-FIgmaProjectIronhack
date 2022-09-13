@@ -15,3 +15,9 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
+const subscribe = document.getElementById('btn-newsletter')
+
+subscribe.addEventListener('click', (event) => {
+    event.preventDefault();
+})
+

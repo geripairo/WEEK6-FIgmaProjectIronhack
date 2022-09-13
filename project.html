@@ -20,13 +20,20 @@
         <a href="index.html"><img id="home-logo" class="logo" src="img/logos/circle.svg" alt="mainLogo"></a>
 
         <ul class="nav-list">            
-            <li><a id="homeNav" class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="project.html">Projects</a></li>
-            <li><a class="nav-link" href="contact.html">Services</a></li>
+            <li class="nav-item"><a id="homeNav" class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Services</a></li>
         </ul>
+        <div id="nav-button-a">
+            <a href="contact.html" ><button id="nav-button" class="btnBlue btnContact">Contact Us</button></a>
+        
+        </div>
 
-        <a href="contact.html"><button id="nav-button" class="btnBlue btnContact">Contact Us</button></a>
-        <!-- <button class="btnBlue btnContact"><a href="contact.html">Contact Us</a></button> -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     
 </header>
@@ -71,25 +78,41 @@
     <h3>Recent Projects</h3>
     <div class="article-row">
         <article class="projects-article">
-            <img src="img/projects-section/4.jpg" alt="Orbit UI design">
-            <h4>Orbit</h4>
-            <p class="headline-text-reg">UI Design</p>
-            <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+            <div>
+                <img src="img/projects-section/4.jpg" alt="Simplify squares colorful">
+            </div>
+            <div class="article-content">
+                <h4>Orbit</h4>
+                <p class="headline-text-reg">UI Design</p>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div>    
+            </div>
         </article>
         <article class="projects-article">
-            <img src="img/projects-section/5.jpg" alt="Purify waves Colorful">
-            <h4>Purify</h4>
-            <p class="headline-text-reg">UI/UX Design</p>
-            <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+            <img src="img/projects-section/5.jpg" alt="Dashcoin Colorful">
+            <div class="article-content">
+                <h4>Purify</h4>
+                <p class="headline-text-reg">UI/UX Design</p>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div>
+            </div>
         </article>
         <article class="projects-article">
-            <img src="img/projects-section/6.jpg" alt="Cryptopie figures colorful">
-            <h4>CryptoPie</h4>
-            <p class="headline-text-reg">App Development</p>
-            <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+            <img src="img/projects-section/6.jpg" alt="Vectorify figures colorful">
+            <div class="article-content">
+                <h4>CryptoPie</h4>
+                <p class="headline-text-reg">App Development</p>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div>    
+            </div>
         </article>
     </div>
 </section>
+
+
 
 <!-- SECTION 3: CTA Newsletter section  -->
 
@@ -106,7 +129,7 @@
 
 <footer id="footer">
     <div id="addressBox">
-        <img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo">
+        <a href="index.html"><img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo"></a>
         <address id="address" class="caption-1">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
     </div>
     <div id="footer-links-container">

@@ -61,11 +61,11 @@
 <!-- SECTION 2: Client section with logos  -->
 
     <section id="logo-slider">
-        <img src="img/logos/airbnb-logo.svg" alt="Airbnb Logo">
-        <img src="img/logos/google-logo.svg" alt="Google Logo">
-        <img src="img/logos/microsoft-logo.svg" alt="Microsoft Logo">
-        <img src="img/logos/fedex-logo.svg" alt="FedEx Logo">
-        <img src="img/logos/amazon-logo.svg" alt="Amazon Logo">
+            <img src="img/logos/airbnb-logo.svg" alt="Airbnb Logo">
+            <img src="img/logos/google-logo.svg" alt="Google Logo">
+            <img src="img/logos/microsoft-logo.svg" alt="Microsoft Logo">
+            <img src="img/logos/fedex-logo.svg" alt="FedEx Logo">
+            <img src="img/logos/amazon-logo.svg" alt="Amazon Logo">
     </section>
 
 <!-- SECTION 3: Projects section  -->
@@ -74,22 +74,38 @@
         <h3>Recent Projects</h3>
         <div class="article-row">
             <article class="projects-article">
-                <img src="img/projects-section/1.jpg" alt="Simplify squares colorful">
-                <h4>Simplify</h4>
-                <p class="headline-text-reg">UI Design & App Development</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div>
+                    <img src="img/projects-section/1.jpg" alt="Simplify squares colorful">
+                </div>
+                <div class="article-content">
+                    <h4>Simplify</h4>
+                    <p class="headline-text-reg">UI Design & App Development</p>
+                    <div class="learn-more-div">
+                        <a href="project.html">Learn More</a>
+                    </div>    
+                </div>
             </article>
+
             <article class="projects-article">
                 <img src="img/projects-section/2.jpg" alt="Dashcoin Colorful">
-                <h4>Dashcoin</h4>
-                <p class="headline-text-reg">Web Development</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div class="article-content">
+                    <h4>Dashcoin</h4>
+                    <p class="headline-text-reg">Web Development</p>
+                    <div class="learn-more-div">
+                        <a href="project.html">Learn More</a>
+                    </div>
+                </div>
             </article>
+
             <article class="projects-article">
                 <img src="img/projects-section/3.jpg" alt="Vectorify figures colorful">
-                <h4>Vectorify</h4>
-                <p class="headline-text-reg">User Experience Design</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div class="article-content">
+                    <h4>Vectorify</h4>
+                    <p class="headline-text-reg">User Experience Design</p>
+                    <div class="learn-more-div">
+                        <a href="project.html">Learn More</a>
+                    </div>
+                </div>
             </article>
         </div>
     </section>
@@ -123,19 +139,25 @@
                 <div class="img-circle"><img src="img/services-section/icons/1.svg" alt="pencil icon"></div>
                 <h4>User Interface Design</h4>
                 <p class="body-intro-20 services">Circle provides you with a stunning user interface design that is accessible to everyone</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div> 
             </aritcle>
             <aritcle class="services-article">
                 <div class="img-circle"><img src="img/services-section/icons/2.svg" alt="pencil icon"></div>
                 <h4>User Experience Design</h4>
                 <p class="body-intro-20 services">Circle always focuses on delivering the best user experience to your customers.</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div> 
             </aritcle>
             <aritcle class="services-article">
                 <div class="img-circle"><img src="img/services-section/icons/3.svg" alt="pencil icon"></div>
                 <h4>Application Development</h4>
                 <p class="body-intro-20 services">We develop high-quality mobile and web applications using the latest technology stack.</p>
-                <a href="project.html"><button class="btn btn-learn-more headline-text-reg">Learn More</button></a>
+                <div class="learn-more-div">
+                    <a href="project.html">Learn More</a>
+                </div> 
             </aritcle>
         </div>
     </section>
@@ -146,8 +168,8 @@
         <h3>Do you have any questions?</h3>
         <p class="body-intro-20">Let us help you</p>
         <div id="subscribe">
-            <input type="email" class="newsletter-email" value placeholder="Enter your email">
-            <a href="#"><button class="btn-subscribe">Subscribe</button></a> 
+            <input type="email" class="newsletter-email" id="newsletter-email" value placeholder="Enter your email">
+            <a href="#"><button id="btn-newsletter" class="btn-subscribe">Subscribe</button></a> 
         </div>
     </section> 
 
@@ -155,7 +177,7 @@
 
     <footer id="footer">
         <div id="addressBox">
-            <img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo">
+            <a href="index.html"><img id="footer-logo" src="img/logos/circle.svg" alt="mainLogo"></a>
             <address id="address" class="caption-1">2972 Westheimer Rd. Santa Ana, <br> Illinois 85486 </address>
         </div>
         <div id="footer-links-container">
