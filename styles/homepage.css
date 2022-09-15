@@ -500,7 +500,7 @@ li a:hover{
   background-repeat: no-repeat;
   margin: auto;
   margin-top: 13rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   height: 60vh;
   width: 90%;
   display: flex;
@@ -851,7 +851,7 @@ li a:hover{
     #footer{
       flex-direction: column;
       justify-content: space-around;
-      margin-top: 10rem;
+      margin-top: 5rem;
     }
     
     #addressBox{

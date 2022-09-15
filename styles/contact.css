@@ -461,7 +461,7 @@ li a:hover{
     #footer{
       flex-direction: column;
       justify-content: space-around;
-      margin-top: 10rem;
+      margin-top: 5rem;
     }
     
     #addressBox{
